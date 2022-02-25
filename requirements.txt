@@ -1,0 +1,8 @@
+anyio==3.5.0
+deta==1.0.1
+fastapi==0.74.0
+idna==3.3
+pydantic==1.9.0
+sniffio==1.2.0
+starlette==0.17.1
+typing_extensions==4.1.1
