@@ -4,8 +4,8 @@ import os
 
 project_key = os.getenv("DETA_PROJECT_KEY")
 deta = Deta(project_key)
-reg_db = deta.Base("registration")
-courses_db = deta.Base("courses")
+reg_db = deta.Base("registrations-db")
+courses_db = deta.Base("courses-db")
 app = FastAPI()
 
 
