@@ -16,7 +16,7 @@ async def get_reg_by_key(key: str):
 
 
 @app.get("/studentRegistration/sisid/{sisid}/academicyear/{academicyear}")
-async def get_reg_by_sisid_academicyear(sisid: int, academicyear: str):
+async def get_reg_by_sisid_academicyear(sisid: int, academicyear: int):
     reg_records = reg_db.fetch({"sisid": sisid, "academicyear": academicyear})
     return reg_records._items
 
@@ -34,7 +34,7 @@ async def get_courses_by_key(key: str):
 
 
 @app.get("/studentCourses/sisid/{sisid}/academicyear/{academicyear}")
-async def get_courses_by_sisid_academicyear(sisid: int, academicyear: str):
+async def get_courses_by_sisid_academicyear(sisid: int, academicyear: int):
     courses_records = courses_db.fetch({"sisid": sisid, "academicyear": academicyear})
     return courses_records._items
 
